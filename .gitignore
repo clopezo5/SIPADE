@@ -383,5 +383,4 @@ healthchecksdb
 appsettings.json
 Models/SIPADEContext.cs
 appsettings.Development.json
-appsettings.json
-Models/SIPADEContext.cs
+
