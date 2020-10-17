@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Fobos\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Fobos\\.nuget\\packages"
+      "C:\\Users\\Yovel\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Yovel\\.nuget\\packages",
+      "C:\\Microsoft\\Xamarin\\NuGet"
     ]
   }
 }
