@@ -7,23 +7,23 @@
 <h1>Details</h1>
 
 <div>
-    <h4>SipTblControlAsistencia</h4>
+    <h4>Control de Asistencia</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblCasFechaHoraEntrada)
+        <dt class="col-sm-2">
+            Fecha Hora de Entrada
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblCasFechaHoraEntrada)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblCasFechaHoraSalida)
+            Fecha Hora de Salida
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblCasFechaHoraSalida)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmp)
+        <dt class="col-sm-2">
+            ID Empleado
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmp.SipTblEmpId)
@@ -31,6 +31,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.SipTblCasId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.SipTblCasId">Editar</a> |
+    <a asp-action="Index">Regresear a la lista</a>
 </div>
