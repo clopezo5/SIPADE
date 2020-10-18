@@ -4,56 +4,55 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Detalle</h1>
 
 <div>
-    <h4>SipTblEmpleado</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpNombres)
+            Nombres
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpNombres)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpApellidos)
+            Apellidos
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpApellidos)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpNit)
+            NIT
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpNit)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpDpi)
+            DPI
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpDpi)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpTel)
+            Teléfono
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpTel)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpDireccion)
+            Dirección
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpDireccion)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpNumigss)
+            IGSS
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpNumigss)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpNumirtra)
+            IRTRA
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpNumirtra)
@@ -62,5 +61,5 @@
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.SipTblEmpId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Regresar a la lista</a>
 </div>

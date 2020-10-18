@@ -4,57 +4,56 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
+<h1>Eliminar</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Esta seguro que desea eliminar el empleado?</h3>
 <div>
-    <h4>SipTblEmpleado</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpNombres)
+        <dt class="col-sm-2">
+            Nombres
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpNombres)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpApellidos)
+        <dt class="col-sm-2">
+            Apellidos
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpApellidos)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpNit)
+            NIT
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpNit)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpDpi)
+            DPI
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpDpi)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpTel)
+            Teléfono
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpTel)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpDireccion)
+            Dirección
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpDireccion)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpNumigss)
+            IGSS
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpNumigss)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SipTblEmpNumirtra)
+            IRTRA
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SipTblEmpNumirtra)
@@ -63,7 +62,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="SipTblEmpId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a asp-action="Index">Regresar a la lista</a>
     </form>
 </div>

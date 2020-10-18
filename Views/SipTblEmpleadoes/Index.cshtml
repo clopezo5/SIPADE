@@ -4,37 +4,37 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Listado de empleados</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Crear nuevo</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEmpNombres)
+                Nombres
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEmpApellidos)
+                Apellidos
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEmpNit)
+               NIT
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEmpDpi)
+                DPI
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEmpTel)
+                Teléfono
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEmpDireccion)
+                Dirección
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEmpNumigss)
+                IGSS
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEmpNumirtra)
+                IRTRA
             </th>
             <th></th>
         </tr>
@@ -67,9 +67,9 @@
                 @Html.DisplayFor(modelItem => item.SipTblEmpNumirtra)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.SipTblEmpId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SipTblEmpId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.SipTblEmpId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.SipTblEmpId">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.SipTblEmpId">Detalle</a> |
+                <a asp-action="Delete" asp-route-id="@item.SipTblEmpId">Eliminar</a>
             </td>
         </tr>
 }

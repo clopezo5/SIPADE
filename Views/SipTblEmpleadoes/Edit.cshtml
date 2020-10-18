@@ -4,9 +4,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Editar</h1>
 
-<h4>SipTblEmpleado</h4>
+<h4>Empleado</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,54 +14,54 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="SipTblEmpId" />
             <div class="form-group">
-                <label asp-for="SipTblEmpNombres" class="control-label"></label>
+                <label asp-for="SipTblEmpNombres" class="control-label">Nombres</label>
                 <input asp-for="SipTblEmpNombres" class="form-control" />
                 <span asp-validation-for="SipTblEmpNombres" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblEmpApellidos" class="control-label"></label>
+                <label asp-for="SipTblEmpApellidos" class="control-label">Apellidos</label>
                 <input asp-for="SipTblEmpApellidos" class="form-control" />
                 <span asp-validation-for="SipTblEmpApellidos" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblEmpNit" class="control-label"></label>
+                <label asp-for="SipTblEmpNit" class="control-label">NIT</label>
                 <input asp-for="SipTblEmpNit" class="form-control" />
                 <span asp-validation-for="SipTblEmpNit" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblEmpDpi" class="control-label"></label>
+                <label asp-for="SipTblEmpDpi" class="control-label">DPI</label>
                 <input asp-for="SipTblEmpDpi" class="form-control" />
                 <span asp-validation-for="SipTblEmpDpi" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblEmpTel" class="control-label"></label>
+                <label asp-for="SipTblEmpTel" class="control-label">Teléfono</label>
                 <input asp-for="SipTblEmpTel" class="form-control" />
                 <span asp-validation-for="SipTblEmpTel" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblEmpDireccion" class="control-label"></label>
+                <label asp-for="SipTblEmpDireccion" class="control-label">Dirección</label>
                 <input asp-for="SipTblEmpDireccion" class="form-control" />
                 <span asp-validation-for="SipTblEmpDireccion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblEmpNumigss" class="control-label"></label>
+                <label asp-for="SipTblEmpNumigss" class="control-label">IGSS</label>
                 <input asp-for="SipTblEmpNumigss" class="form-control" />
                 <span asp-validation-for="SipTblEmpNumigss" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblEmpNumirtra" class="control-label"></label>
+                <label asp-for="SipTblEmpNumirtra" class="control-label">IRTRA</label>
                 <input asp-for="SipTblEmpNumirtra" class="form-control" />
                 <span asp-validation-for="SipTblEmpNumirtra" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Regresar a la lista</a>
 </div>
 
 @section Scripts {
