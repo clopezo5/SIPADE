@@ -19,7 +19,7 @@
                 <span asp-validation-for="SipTblEplId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblTreId" class="control-label">Id de trabajo realizado</label>
+                <label asp-for="SipTblTreId" class="control-label">ID de trabajo realizado</label>
                 <select asp-for="SipTblTreId" class="form-control" asp-items="ViewBag.SipTblTreId"></select>
                 <span asp-validation-for="SipTblTreId" class="text-danger"></span>
             </div>
@@ -54,14 +54,14 @@
                 <span asp-validation-for="SipTblDplOtros" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Regresear a la lista</a>
+    <a asp-action="Index">Regresar a la lista</a>
 </div>
 
 @section Scripts {
