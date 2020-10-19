@@ -4,19 +4,19 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Listado de tipo de actividades</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Crear Nueva</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblActNombre)
+                Nombre
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblActCostoact)
+                Costo de la actividad
             </th>
             <th></th>
         </tr>
@@ -31,9 +31,9 @@
                 @Html.DisplayFor(modelItem => item.SipTblActCostoact)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.SipTblActId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SipTblActId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.SipTblActId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.SipTblActId">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.SipTblActId">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.SipTblActId">Eliminar</a>
             </td>
         </tr>
 }
