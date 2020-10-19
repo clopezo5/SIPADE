@@ -4,22 +4,22 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Listado de encabezado de planillas</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create Nueva</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEplFechahora)
+                Fecha y hora
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEplFechainicio)
+                Fecha de inicio
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEplFechafin)
+                Fecha de finalización
             </th>
             <th></th>
         </tr>
@@ -37,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.SipTblEplFechafin)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.SipTblEplId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SipTblEplId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.SipTblEplId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.SipTblEplId">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.SipTblEplId">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.SipTblEplId">Eliminar</a>
             </td>
         </tr>
 }

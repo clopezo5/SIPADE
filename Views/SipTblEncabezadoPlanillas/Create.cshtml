@@ -4,43 +4,43 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Crear</h1>
 
-<h4>SipTblEncabezadoPlanilla</h4>
+<h4>Encabezado de Planilla</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="SipTblEplId" class="control-label"></label>
+                <label asp-for="SipTblEplId" class="control-label">ID del empleado</label>
                 <input asp-for="SipTblEplId" class="form-control" />
                 <span asp-validation-for="SipTblEplId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblEplFechahora" class="control-label"></label>
+                <label asp-for="SipTblEplFechahora" class="control-label">Fecha y hora</label>
                 <input asp-for="SipTblEplFechahora" class="form-control" />
                 <span asp-validation-for="SipTblEplFechahora" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblEplFechainicio" class="control-label"></label>
+                <label asp-for="SipTblEplFechainicio" class="control-label">Fecha de inicio</label>
                 <input asp-for="SipTblEplFechainicio" class="form-control" />
                 <span asp-validation-for="SipTblEplFechainicio" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblEplFechafin" class="control-label"></label>
+                <label asp-for="SipTblEplFechafin" class="control-label">Fecha de fin</label>
                 <input asp-for="SipTblEplFechafin" class="form-control" />
                 <span asp-validation-for="SipTblEplFechafin" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Crear" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Regresar a la lista</a>
 </div>
 
 @section Scripts {
