@@ -4,9 +4,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Editar</h1>
 
-<h4>SipTblTrabajoRealizado</h4>
+<h4>Trabajo Realizado</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,34 +14,34 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="SipTblTreId" />
             <div class="form-group">
-                <label asp-for="SipTblEmpId" class="control-label"></label>
+                <label asp-for="SipTblEmpId" class="control-label">ID del empleado</label>
                 <select asp-for="SipTblEmpId" class="form-control" asp-items="ViewBag.SipTblEmpId"></select>
                 <span asp-validation-for="SipTblEmpId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblActId" class="control-label"></label>
+                <label asp-for="SipTblActId" class="control-label">ID de la actividad</label>
                 <select asp-for="SipTblActId" class="form-control" asp-items="ViewBag.SipTblActId"></select>
                 <span asp-validation-for="SipTblActId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblTreCantidad" class="control-label"></label>
+                <label asp-for="SipTblTreCantidad" class="control-label">Cantidad de trabajo</label>
                 <input asp-for="SipTblTreCantidad" class="form-control" />
                 <span asp-validation-for="SipTblTreCantidad" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SipTblTreTotal" class="control-label"></label>
+                <label asp-for="SipTblTreTotal" class="control-label">Total del trabajo</label>
                 <input asp-for="SipTblTreTotal" class="form-control" />
                 <span asp-validation-for="SipTblTreTotal" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Regresar a la lista</a>
 </div>
 
 @section Scripts {

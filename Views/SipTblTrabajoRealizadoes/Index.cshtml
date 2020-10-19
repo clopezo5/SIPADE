@@ -4,25 +4,25 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Listado de trabajo realizado</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Crear nueva</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblTreCantidad)
+                Cantidad de trabajo realizado
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblTreTotal)
+                Total de trabajo realizado
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblAct)
+                ID de la actividad
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SipTblEmp)
+                ID del empleado
             </th>
             <th></th>
         </tr>
@@ -43,9 +43,9 @@
                 @Html.DisplayFor(modelItem => item.SipTblEmp.SipTblEmpId)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.SipTblTreId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SipTblTreId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.SipTblTreId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.SipTblTreId">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.SipTblTreId">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.SipTblTreId">Eliminar</a>
             </td>
         </tr>
 }
