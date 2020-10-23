@@ -3,6 +3,19 @@
 @{
     ViewData["Title"] = "Index";
 }
+<header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-4 mx-auto">
+                <div class="site-heading">
+                    <h1>SIPADE</h1>
+                    <span class="subheading">Listado de Asistencias</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
 <h1>Listado de Asistencias</h1>
 
@@ -25,23 +38,24 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.SipTblCasFechaHoraEntrada)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SipTblCasFechaHoraSalida)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SipTblEmp.SipTblEmpId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.SipTblCasId">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.SipTblCasId">Detalles</a> |
-                <a asp-action="Delete" asp-route-id="@item.SipTblCasId">Eliminar</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SipTblCasFechaHoraEntrada)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SipTblCasFechaHoraSalida)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SipTblEmp.SipTblEmpId)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.SipTblCasId">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.SipTblCasId">Detalles</a> |
+                    <a asp-action="Delete" asp-route-id="@item.SipTblCasId">Eliminar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
