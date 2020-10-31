@@ -12,9 +12,7 @@ namespace SIPADE.Models
             SipTblControlAsistencia = new HashSet<SipTblControlAsistencia>();
             SipTblTrabajoRealizado = new HashSet<SipTblTrabajoRealizado>();
         }
-        [StringLength(5)]
         public int SipTblEmpId { get; set; }
-        [StringLength(100)]
         public string SipTblEmpNombres { get; set; }
         public string SipTblEmpApellidos { get; set; }
         public string SipTblEmpNit { get; set; }
