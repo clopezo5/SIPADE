@@ -14,7 +14,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="SipTblTreId" class="control-label">Codigo del trabajo realizado</label>
-                <input asp-for="SipTblTreId" class="form-control" />
+                <input asp-for="SipTblTreId" class="form-control" required/>
                 <span asp-validation-for="SipTblTreId" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -27,12 +27,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="SipTblTreCantidad" class="control-label">Cantidad de trabajo realizado</label>
-                <input asp-for="SipTblTreCantidad" class="form-control" />
+                <input asp-for="SipTblTreCantidad" class="form-control" required/>
                 <span asp-validation-for="SipTblTreCantidad" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="SipTblTreTotal" class="control-label">Total de trabajo</label>
-                <input asp-for="SipTblTreTotal" class="form-control" />
+                <input asp-for="SipTblTreTotal" class="form-control" required/>
                 <span asp-validation-for="SipTblTreTotal" class="text-danger"></span>
             </div>
             <div class="form-group">

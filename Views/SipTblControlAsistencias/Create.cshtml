@@ -15,7 +15,7 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
                     <label asp-for="SipTblCasId" class="control-label">Código de control de asistencia</label>
-                    <input asp-for="SipTblCasId" class="form-control" />
+                    <input asp-for="SipTblCasId" class="form-control" required/>
                     <span asp-validation-for="SipTblCasId" class="text-danger"></span>
                 </div>
                 <div class="form-group">
@@ -24,12 +24,12 @@
                 </div>
                 <div class="form-group">
                     <label asp-for="SipTblCasFechaHoraEntrada" class="control-label">Fecha Hora de Entrada</label>
-                    <input asp-for="SipTblCasFechaHoraEntrada" class="form-control" />
+                    <input asp-for="SipTblCasFechaHoraEntrada" class="form-control" required/>
                     <span asp-validation-for="SipTblCasFechaHoraEntrada" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="SipTblCasFechaHoraSalida" class="control-label">Fecha Hora de Salida</label>
-                    <input asp-for="SipTblCasFechaHoraSalida" class="form-control" />
+                    <input asp-for="SipTblCasFechaHoraSalida" class="form-control" required/>
                     <span asp-validation-for="SipTblCasFechaHoraSalida" class="text-danger"></span>
                 </div>
                 <div class="form-group">
